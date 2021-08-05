@@ -11,28 +11,29 @@ body {
     color: #22254B;
 }
 
-
 header {
     height: 7vw;
     width: 100%;
     font-size: 1.25vw;
-    box-shadow: 1px 5px 5px rgb(230, 230, 230);
 }
 
 .header-box {
+    padding: 4rem;
     height: 7vw;
-    width: 90vw;
-    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 1px 5px 5px #00000014;
 }
 
-.header-title {
-    padding: 2vw;
-    font-size: 1.75vw;
+.logo-image {
+    width: 12vw;
 }
-
 
 .header-list {
     height: 10vh;
@@ -63,10 +64,11 @@ header {
     border: 1px black solid;
     border-radius: 60%;
     font-size: 0.5vw;
+    cursor: pointer;
 }
 
 main {
-    height: 150vh;
+    height: 230vw;
     width: 100%
 }
 
@@ -126,13 +128,13 @@ main {
 }
 
 .main-thrbox {
-    height: 12vw;
+    padding: 1rem;
+    height: 18vw;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(243, 243, 147);
+    background:linear-gradient(to bottom, #FFFFFF, #FFFAE4)
 }
 
 .main-scntitle {
@@ -154,42 +156,58 @@ main {
     border-radius: 10px;
 }
 
-.main-list {
-    height: 7vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-
-.main-list li {
-    padding: 1.75vw 0;
-    height: 5vw;
-    width: 10vw;
-    text-align: start;
-    border-right: 1px solid black;
-    cursor: pointer;
-}
-
-.main-list li:hover {
-    background-color: #FFCE06;
-    font-weight: bolder;
-}
-
 .main-scnconteiner {
     height: 35vw;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     color: #fff;
     background-color:#22254B;
 }
 
-/* .main-fifthbox {
-
+.main-list {
+    height: 7vw;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border-radius: 20px;
+    color: #22254B;
+    background-color: #fff;
+    position: relative;
+    bottom: 3vw;
 }
- */
+
+.list-paragraph {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+}
+.list-paragraph:hover {
+    background-color:#FFCE06;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.main-list p {
+    width: 12vw;
+    text-align: center;
+    border-radius: 5px
+}
+
+
+.box-prime {
+    height: 25vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gif-animation {
+    width: 30vw;
+}
+
 .main-sixthbox {
     height: 20vw;
     display: flex;
@@ -233,11 +251,210 @@ main {
 }
 
 .main-seventhparag {
-    font-size: 1.5vw
+    font-size: 1.75vw
 }
 
 .main-eightparag {
     width: 29vw;
     font-size: 1.25vw;
     font-weight: bolder;
+}
+
+.main-fourthconteiner {
+    height: 30vw;
+    width: 100%;
+    color: #fff;
+    background-color: #22254B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.main-fourthconteiner h2 {
+    padding: 3vw;
+    font-size: 3vw;
+}
+
+.main-fourthconteiner p {
+    width: 50vw;
+    font-size: 1.75vw;
+    font-weight: lighter;
+}
+
+.box-boxes {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 3vw;
+}
+
+.box-one {
+    height: 12vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: grey 2px solid;
+    border-radius: 10px;
+    font-size: 1vw;
+    background-color: #fff;
+    position: relative;
+    right: 2vw;
+    border: #22254B 2px solid;
+}
+
+.box-two {
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.05vw;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    top: 0.05vw;
+    border: #22254B 2px solid;
+}
+.box-two img, .box-four img, .box-six img {
+    width: 15vw;
+    margin-bottom: 1.5vw;
+}
+
+.box-three {
+    height: 12vw;
+    width: 20vw;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    position: relative;
+    left: 2vw;
+    background-color: #fff;
+    border-radius: 10px;
+    border: #22254B 2px solid;
+}
+
+.box-four {
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.05vw;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    bottom: 6vw;
+    right: 2vw;
+    border: #22254B 2px solid;
+}
+
+.box-five {
+    height: 12vw;
+    width: 20vw;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    top: 2vw;
+    border: #22254B 2px solid;
+}
+
+.box-six {
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.05vw;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    bottom: 6vw;
+    left: 2vw;
+    border: #22254B 2px solid;
+}
+
+footer {
+    height: 50vw;
+    width: 100%;
+    background-color: hsla(236, 38%, 21%, 0.19);
+    box-shadow: 1px 5px 5px #00000014;
+}
+
+.footer-box {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.footer-box p {
+    position: relative;
+    top: 0.25vw;
+    font-size: 2.75vw;
+}
+
+
+.footer-scnbox {
+    height: 15vw;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.footer-scnbox p {
+    width: 60vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.footer-conteiner {
+    padding: 4rem;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-conteiner p {
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+.footer-conteiner p:hover {
+    text-decoration: underline 1px black;
+}
+
+.footer-thirdbox {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
 }
