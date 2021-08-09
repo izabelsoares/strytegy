@@ -26,7 +26,7 @@ header {
 
 .header-box {
     padding: 4rem;
-    height: 7vw;
+    height: 12vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -36,6 +36,7 @@ header {
     z-index: 99;
     background-color: #fff;
     box-shadow: 1px 5px 5px #00000014;
+    font-weight: bold;
 }
 @media(max-width: 1100px) {
     .header-box {
@@ -66,20 +67,37 @@ h1, h2, h3, h4 {
     }
 }
 
+.header-seta {
+    display: none
+}
+@media(max-width: 864px){
+    .header-seta {
+        width: 10vw;
+        display:initial
+    }
+}
+
 .sty-button {
-    height: 3vw;
+    height: 5vw;
     width: 12vw;
     background-color: #FFCE06;
     border: transparent;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.15vw;
-    font-weight: bolder;
+    font-weight: bold;
+}
+@media(max-width: 864px) {
+    .sty-button {
+        height: 6vw;
+        width: 14vw;
+        font-size: 1.75vw
+    }
 }
 
-.pt-circle {
-    height: 1vw;
-    width: 1vw;
+.en-circle {
+    height: 2.5vh;
+    width: 1.25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,13 +107,27 @@ h1, h2, h3, h4 {
     cursor: pointer;
 }
 
+.header-seta {
+    display: none;
+}
+@media(max-width: 864px) {
+    .header-seta {
+        width: 10%;
+        display: flex;
+        cursor: pointer;
+    }
+    .seta-menu {
+        width: 25%;
+    }
+}
+
 main {
-    height: 230vw;
+    height: 225vw;
     width: 100%
 }
 @media(max-width: 864px) {
     main {
-        height: 250vw;
+        height: 255vw
     }
 }
 
@@ -105,7 +137,7 @@ main {
 }
 @media(max-width: 864px) {
     .main-conteiner {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 }
@@ -130,18 +162,45 @@ main {
 }
 @media(max-width: 864px) {
     .main-box button {
-        height: 35px;
+        height: 20vw;
         position: relative;
         left: 30vw;
     }
     .main-title {
-        font-size: 3vw;
+        width: 35vw;
+        font-size: 5vw;
     }
 }
 
 .main-paragraph {
     width: 30vw;
     font-size: 1.45vw;
+}
+@media(max-width: 864px) {
+    .main-paragraph {
+        width: 50vw;
+        font-size: 3vw;
+    }
+}
+
+.main-stars {
+    display: none;
+}
+@media(max-width: 864px) {
+    .main-stars {
+        display: flex;
+    }
+    .small-star {
+        height: 1.25vh;
+        position: relative;
+        bottom: 3.5vw;
+        right: 3vw;
+    }
+    .big-star {
+        height: 2vh;
+        position: relative;
+        right: 2vw
+    }
 }
 
 .main-image {
@@ -152,10 +211,49 @@ main {
 }
 @media(max-width: 864px) {
     .main-image {
-        width: 52vw;
-        top: 3vw;
-        right: 0;
-        left: 10vw;
+        display: none;
+    }
+}
+
+.main-images-responsive {
+    display: none;
+}
+@media(max-width: 864px) {
+    .main-images-responsive {
+        height: 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .circles-responsive {
+        width: 30vw;
+        position: relative;
+        bottom: 2vw;
+        left: 50vw;
+    }
+    .block-responsive {
+        height: 10vw;
+        width: 6vw;
+        position: relative;
+        left: 65vw;
+    }
+    .hand-responsive {
+        width: 8vw;
+        position: relative;
+        bottom: 25vw;
+        left: 60vw;
+    }
+    .stars-responsive {
+        width: 7vw;
+        position: relative;
+        top: 5vw;
+        left: 52vw;
+        z-index: 99;
+    }
+    .group-responsive {
+        width: 13vw;
+        position: relative;
+        bottom: 18vw;
+        left: 58vw;
     }
 }
 
@@ -170,7 +268,7 @@ main {
 
 .main-cookies {
     padding: 1rem;
-    height: 3vw;
+    height: 7vh;
     width: 17vw;
     display: flex;
     align-items: center;
@@ -201,6 +299,7 @@ main {
 @media(max-width: 864px) {
     .main-thrbox {
         padding: 0;
+        height: 25vw;
         width: 60%;
         margin: auto;
     }
@@ -229,6 +328,7 @@ main {
         text-align: start;
         position: relative;
         bottom: 3vw;
+        font-size: 2.35vw;
     }
 }
 
@@ -241,13 +341,18 @@ main {
 }
 
 .main-scnconteiner {
-    height: 35vw;
+    height: 70vh;
     color: #fff;
     background-color:#22254B;
 }
+@media(max-width: 864px) {
+    .main-scnconteiner {
+        height: 40vw;
+    }
+}
 
 .main-list {
-    height: 7vw;
+    height: 13vh;
     width: 80vw;
     display: flex;
     justify-content: space-around;
@@ -259,6 +364,11 @@ main {
     background-color: #fff;
     position: relative;
     bottom: 3vw;
+}
+@media(max-width: 864px) {
+    .main-list  {
+        height: 7vw;
+    }  
 }
 
 .list-paragraph {
@@ -278,7 +388,12 @@ main {
 .main-list p {
     width: 12vw;
     text-align: center;
-    border-radius: 5px
+    border-radius: 5px;
+}
+@media(max-width: 864px) {
+    .main-list p {
+        font-size: 1.8vw
+    }
 }
 
 .box-prime {
@@ -314,6 +429,12 @@ main {
     width: 18vw;
     font-size: 1.25vw;
     font-weight: lighter;
+}
+@media(max-width: 864px) {
+    .main-sixthbox p {
+        width: 30vw;
+        font-size: 1.8vw
+    }
 }
 
 .main-thirdconteiner {
@@ -360,6 +481,15 @@ main {
     font-size: 1.25vw;
     font-weight: bolder;
 }
+@media(max-width: 864px) {
+    .main-seventhparag {
+        font-size: 2vw;
+    }
+    .main-eightparag {
+        width: 40vw;
+        font-size: 2vw
+    }
+}
 
 .main-fourthconteiner {
     height: 30vw;
@@ -384,7 +514,7 @@ main {
     font-weight: lighter;
 }
 
-.box-boxes {
+.cubes-conteiner {
     width: 90%;
     margin: auto;
     display: flex;
@@ -393,7 +523,7 @@ main {
     bottom: 3vw;
 }
 
-.box-one, .box-three, .box-five {
+.cube-one, .cube-three, .cube-five {
     height: 12vw;
     width: 20vw;
     display: flex;
@@ -406,7 +536,7 @@ main {
     background-color: #fff;
 }
 
-.box-two, .box-four, .box-six {
+.cube-two, .cube-four, .cube-six {
     height: 20vw;
     width: 20vw;
     border: 2px solid black;
@@ -421,56 +551,57 @@ main {
     border: #22254B 2px solid;
 }
 
-.box-one {
+.cube-one {
     position: relative;
     right: 2vw;
 }
 
-.box-two {
+.cube-two {
     position: relative;
     top: 0.05vw;
 }
-.box-two img, .box-four img, .box-six img {
+.cube-two img, .cube-four img, .cube-six img {
     width: 15vw;
     margin-bottom: 1.5vw;
 }
 
-.box-three {
+.cube-three {
     position: relative;
     left: 2vw;
 }
 
-.box-four {
+.cube-four {
     position: relative;
     bottom: 6vw;
     right: 2vw;
 }
 
-.box-five {
+.cube-five {
     position: relative;
     top: 2vw;
 }
 
-.box-six {
+.cube-six {
     position: relative;
     bottom: 6vw;
     left: 2vw;
 }
 
+@media(max-width: 864px) {
+    .cube-one, .cube-two, .cube-three, .cube-four, .cube-five, .cube-six {
+        font-size: 1.35vw
+    }
+}
+
 footer {
-    height: 57vw;
+    height: 63vw;
     width: 100%;
     background-color: hsla(236, 38%, 21%, 0.19);
     box-shadow: 1px 5px 5px #00000014;
 }
 @media(max-width: 995px) {
     footer {
-        height: 90vw;
-    }
-}
-@media(max-width: 610px) {
-    footer{
-        height: 130vw;
+        height: 100vw;
     }
 }
 
@@ -479,6 +610,10 @@ footer {
         display: flex;
         flex-direction: column;
     }
+}
+
+.waves-footer {
+    height: 5vw;
 }
 
 .footer-box {
@@ -506,6 +641,11 @@ footer {
     justify-content: space-around;
     align-items: center
 }
+@media(max-width: 864px) {
+    .footer-scnbox {
+        height: 30vw;
+    }
+}
 
 .footer-scnbox p {
     width: 60vw;
@@ -515,18 +655,25 @@ footer {
 
 .footer-conteiner {
     padding: 4rem;
+    height: 20vw;
     width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .footer-conteiner p {
     font-size: 1.25vw
 }
 @media(max-width: 864px) {
     .footer-conteiner {
+        height: 30vw;
         flex-direction: column;
         align-items: center
+    }
+    .footer-conteiner p {
+        width: 100%;
+        font-size: 2vw;
     }
 }
 
@@ -540,9 +687,14 @@ footer {
 }
 
 .footer-thirdbox {
+    height: 20vw;
     width: 35vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.footer-thirdbox h4:hover {
+    text-decoration: none;
 }
 
 .footer-img {
@@ -579,6 +731,4 @@ footer {
     .footer-contacts {
         display: flex;
     }
-
 }
-
